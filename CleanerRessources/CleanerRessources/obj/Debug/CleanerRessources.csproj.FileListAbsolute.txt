@@ -1,0 +1,10 @@
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Debug\CleanerRessources.exe.config
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Debug\CleanerRessources.exe
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Debug\CleanerRessources.pdb
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Debug\CleanerRessources.csprojAssemblyReference.cache
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Debug\CleanerRessources.csproj.CoreCompileInputs.cache
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Debug\CleanerRessources.csproj.CopyComplete
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Debug\CleanerRessources.exe
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Debug\CleanerRessources.pdb
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Debug\Library.dll
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Debug\Library.pdb

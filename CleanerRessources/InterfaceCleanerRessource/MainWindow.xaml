@@ -1,0 +1,77 @@
+﻿<Window x:Class="InterfaceCleanerRessource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfaceCleanerRessource"
+        mc:Ignorable="d"
+        x:Name="This"
+        Title="Cleaner Ressources" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Chargement des clés:">
+            <DockPanel Margin="5">
+                <Button Margin="5" DockPanel.Dock="Bottom" Command="{Binding SearchKeyNotUsedCmd}" CommandParameter="{Binding}">Run Process</Button>
+                <Button Margin="5" DockPanel.Dock="Right" HorizontalAlignment="Right" MinWidth="50" Command="{Binding SelectDirectoryCmd}" CommandParameter="{Binding}">...</Button>
+                <TextBox Text="{Binding PathSolution, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+            </DockPanel>
+        </GroupBox>
+
+        <DockPanel Grid.Row="1" Visibility="{Binding ProcessRuning, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <TextBlock Margin="5" DockPanel.Dock="Top" Text="{Binding ProjectCurrent}"></TextBlock>
+            <Grid Margin="5" DockPanel.Dock="Bottom">
+                <ProgressBar Height="20" Maximum="100" Value="{Binding Pourcent}"/>
+                <TextBlock HorizontalAlignment="Center" Text="{Binding Pourcent, StringFormat=' {0} %'}"/>
+            </Grid>
+        </DockPanel>
+        <DockPanel Grid.Row="1">
+            <DockPanel.Style>
+                <Style TargetType="DockPanel">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ProcessRuning}" Value="True">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DockPanel.Style>
+            <Button Margin="5" DockPanel.Dock="Right" HorizontalAlignment="Right" Width="100" Command="{Binding DeleteKeyCmd}" CommandParameter="{Binding }" Content="Supprimer"/>
+
+            <TextBlock DockPanel.Dock="Left">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0} / {1}">
+                        <Binding Path="CountKeysNotUsers" />
+                        <Binding Path="CountAllKeys" />
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DockPanel>
+
+        <ListView Grid.Row="2" ItemsSource="{Binding ListKeyNotUsed}" >
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="IsSelected" Value="{Binding Selected}"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Fichier" DisplayMemberBinding="{Binding File}"  Width="250"/>
+                    <GridViewColumn Header="Clé" DisplayMemberBinding="{Binding Key}" Width="100"/>
+                    <GridViewColumn Header="Libellé" DisplayMemberBinding="{Binding Label}" Width="400"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

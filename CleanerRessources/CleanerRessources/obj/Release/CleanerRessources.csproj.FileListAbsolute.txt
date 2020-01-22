@@ -1,0 +1,10 @@
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Release\CleanerRessources.exe.config
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Release\CleanerRessources.exe
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Release\CleanerRessources.pdb
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Release\Tilbury.Common.Wpf.dll
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\bin\Release\Tilbury.Common.Wpf.pdb
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Release\CleanerRessources.csprojAssemblyReference.cache
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Release\CleanerRessources.csproj.CoreCompileInputs.cache
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Release\CleanerRessources.csproj.CopyComplete
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Release\CleanerRessources.exe
+D:\Projets\CleanerRessources\CleanerRessources\CleanerRessources\obj\Release\CleanerRessources.pdb

@@ -1,0 +1,6 @@
+D:\Projets\CleanerRessources\CleanerRessources\Library\bin\Debug\Library.dll
+D:\Projets\CleanerRessources\CleanerRessources\Library\bin\Debug\Library.pdb
+D:\Projets\CleanerRessources\CleanerRessources\Library\obj\Debug\Library.csprojAssemblyReference.cache
+D:\Projets\CleanerRessources\CleanerRessources\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+D:\Projets\CleanerRessources\CleanerRessources\Library\obj\Debug\Library.dll
+D:\Projets\CleanerRessources\CleanerRessources\Library\obj\Debug\Library.pdb
